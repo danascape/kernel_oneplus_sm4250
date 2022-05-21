@@ -4,6 +4,8 @@ PATCHLEVEL = 19
 SUBLEVEL = 152
 EXTRAVERSION =
 NAME = "People's Front"
+OEM_TARGET_PRODUCT=billie2
+export OEM_TARGET_PRODUCT
 
 # *DOCUMENTATION*
 # To see a list of typical targets execute "make help"
