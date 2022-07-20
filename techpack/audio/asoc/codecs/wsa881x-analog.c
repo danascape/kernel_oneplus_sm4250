@@ -510,7 +510,7 @@ static int wsa881x_visense_adc_ctrl(struct snd_soc_component *component,
 			snd_soc_component_update_bits(component,
 					WSA881X_ADC_SEL_IBIAS,
 					0x70, 0x40);
-			snd_soc_component_update_bits(component,
+		snd_soc_component_update_bits(component,
 					WSA881X_ADC_EN_SEL_IBIAS,
 					0x07, 0x04);
 			snd_soc_component_update_bits(component,

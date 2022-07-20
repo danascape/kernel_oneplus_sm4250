@@ -796,7 +796,7 @@ static int rouleur_codec_enable_ear_pa(struct snd_soc_dapm_widget *w,
 			rouleur->update_wcd_event(rouleur->handle,
 						WCD_BOLERO_EVT_RX_MUTE,
 						(WCD_RX1 << 0x10));
-			wcd_enable_irq(&rouleur->irq_info,
+		wcd_enable_irq(&rouleur->irq_info,
 					ROULEUR_IRQ_HPHL_PDM_WD_INT);
 		break;
 	case SND_SOC_DAPM_PRE_PMD:
@@ -846,7 +846,7 @@ static int rouleur_codec_enable_lo_pa(struct snd_soc_dapm_widget *w,
 			rouleur->update_wcd_event(rouleur->handle,
 						WCD_BOLERO_EVT_RX_MUTE,
 						(WCD_RX1 << 0x10));
-			wcd_enable_irq(&rouleur->irq_info,
+		wcd_enable_irq(&rouleur->irq_info,
 					ROULEUR_IRQ_HPHL_PDM_WD_INT);
 		break;
 	case SND_SOC_DAPM_PRE_PMD:

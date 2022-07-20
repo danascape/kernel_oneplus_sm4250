@@ -796,8 +796,8 @@ static int sia81xx_resume(
 
 	//if (CHIP_TYPE_SIA8101 == sia81xx->chip_type ||
 	//	CHIP_TYPE_UNKNOWN == sia81xx->chip_type)
-		sia81xx_timer_task_start(sia81xx->timer_task_hdl);
-	
+	sia81xx_timer_task_start(sia81xx->timer_task_hdl);
+
 	return 0;
 
 err_sia81xx_resume:
@@ -809,7 +809,7 @@ static int sia81xx_suspend(
 	struct sia81xx_dev_s *sia81xx)
 {
 	unsigned long flags;
-	
+
 	pr_debug("[debug][%s] %s: running \r\n", LOG_FLAG, __func__);
 
 	if(NULL == sia81xx)
